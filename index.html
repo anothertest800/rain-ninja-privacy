@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Rain Ninja — privacy policy</title>
+<style>
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.6; }
+body { margin: auto; max-width: 46rem; padding: 1rem; overflow-wrap: anywhere; }
+h1 { font-size: 1.6rem; } h2 { font-size: 1.25rem; margin-top: 2rem; } h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+.box { border: 1px solid #888; border-radius: .5rem; padding: .2rem 1rem; }
+dl { margin: 0 0 1rem; } dt { font-weight: bold; margin-top: 1rem; } dd { margin: .2rem 0 0; }
+a { color: #0645ad; } a:focus-visible { outline: 3px solid #aa6700; }
+@media (prefers-color-scheme: dark) { a { color: #9ccdff; } }
+</style>
+</head>
+<body>
+<h1>Rain Ninja privacy policy</h1>
+<p>In force from 24 November 2026. It covers Rain Ninja for Android, version 4.20.0 and later.</p>
+<p>Rain Ninja is a motorcycle ride planner with live rain radar. This policy says what information the app uses,
+where that information goes, and what you can do about it. The same text is included in the app
+(Settings, at the bottom: Privacy policy) and published at
+<a href="https://anothertest800.github.io/rain-ninja-privacy/" target="_blank" rel="noopener noreferrer">https://anothertest800.github.io/rain-ninja-privacy/</a>.</p>
+
+<h2 id="short">The short version</h2>
+<div class="box">
+<ul>
+<li>No account, no adverts, no analytics and no trackers.</li>
+<li>The developer runs no server for the app and receives none of your information: not your location,
+not your rides, not your settings.</li>
+<li>Your rides, your home, your settings and your ride history stay on your phone.</li>
+<li>To show forecasts, radar, maps and places, the app asks public services on the internet. Those requests carry
+a rounded position or the text you typed, and, like every internet request, your phone's IP address.</li>
+<li>Your location is used while you use the app. It is used in the background only if you turn on a Nanny,
+and only after you agree on a separate screen.</li>
+</ul>
+</div>
+
+<h2 id="who">Who is responsible</h2>
+<p>Rain Ninja is made by an independent developer, who publishes on GitHub as <strong>anothertest800</strong>
+("we" in this policy). To ask a question or make a request, open an issue at
+<a href="https://github.com/anothertest800/rain-ninja-privacy/issues" target="_blank" rel="noopener noreferrer">github.com/anothertest800/rain-ninja-privacy/issues</a>.
+That page is public: please do not write personal details in it.</p>
+
+<h2 id="uses">What the app uses</h2>
+
+<h3>Your location</h3>
+<p>The app uses your precise or approximate location, whichever you allow in Android.</p>
+<ul>
+<li><strong>While you use the app.</strong> The radar screen centres the map on you and counts the minutes until rain
+reaches you. The planner can start a ride where you are. Ride with radar follows you on the map and speaks rain
+warnings; it keeps doing so with the screen off, and Android shows a notification for as long as it runs.</li>
+<li><strong>In the background, only with a Nanny on.</strong> Rain Ninja collects location data to enable the Nanny's
+go-home reminders (the dusk Nanny and the Rain nanny) even when the app is closed or not in use. While a Nanny is on,
+the app reads the phone's position at each check (every 1 to 30 minutes, as you set it), works out the way home on the
+phone, and asks the weather service for the forecast along that way. Android shows a notification for as long as a
+Nanny runs. The app asks you first, on a screen of its own, before Android's permission screen. If you say no,
+everything else works as before. Turning both Nannies off stops it.</li>
+</ul>
+<p>Your location is never sent to the developer and is never used for advertising. Where it does go is listed under
+<a href="#leaves">What leaves your phone</a>.</p>
+
+<h3>What you type and save</h3>
+<p>The places or postcodes you type as a start or a home, the rides you save, and your settings (look, text size,
+road choices, weather source, Nanny and Route watch settings). All of it is stored on your phone. A place name or
+postcode you type is sent to a lookup service to find where it is.</p>
+
+<h3>Ride history</h3>
+<p>While "Keep a ride history on this phone" is on (Settings, Rain dodge; it is on when the app is new), the app writes
+down where you are every 30 seconds while Ride with radar is on, and at each Nanny check. It uses this to tell which
+way you are going. The history is kept for 14 days in the app's private storage, is not part of any backup and never
+leaves the phone. You can switch it off or clear it in the same place.</p>
+
+<h3>The app's log</h3>
+<p>The app keeps a small log (about 1 MB at most) in its private storage: what it did, errors and crashes. The log is
+not sent anywhere. You can read and copy it in the ride screen's settings; it leaves the phone only if you copy it and
+share it yourself.</p>
+
+<h3>What the app does not use</h3>
+<p>Your name, e-mail address, phone number, contacts, photos, files, microphone or camera; an advertising ID or
+any other device identifier; payment details. There is nothing to buy in the app.</p>
+
+<h2 id="leaves">What leaves your phone</h2>
+<p>The developer has no server, so nothing goes to the developer. The app asks the services below directly, over an
+encrypted connection (HTTPS). Each of them sees your phone's IP address and the usual technical details of a web
+request, and handles them under its own privacy policy. The app sends no account, no advertising ID and no device
+identifier with these requests.</p>
+<dl>
+<dt>Open-Meteo (api.open-meteo.com): weather forecasts and wind</dt>
+<dd><strong>Receives:</strong> positions rounded to a grid of about 11 km: your start, points along the routes being
+checked, the saved rides you watch, and, for a Nanny, your position and your home. For the wind arrow on the radar,
+your position rounded to about 1 km.<br>
+<strong>When:</strong> planning a ride, Ride with radar, Route watch and Nanny checks (these two also in the
+background, if you turned them on).<br>
+<a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener noreferrer">Open-Meteo terms and privacy</a></dd>
+
+<dt>MET Norway (api.met.no): weather forecasts</dt>
+<dd><strong>Receives:</strong> positions rounded to about 5 km.<br>
+<strong>When:</strong> only when you choose MET Norway as the weather source, or when Open-Meteo does not answer.<br>
+<a href="https://www.met.no/en/About-us/privacy" target="_blank" rel="noopener noreferrer">MET Norway privacy</a></dd>
+
+<dt>OpenStreetMap Nominatim (nominatim.openstreetmap.org): place search</dt>
+<dd><strong>Receives:</strong> the place name you typed.<br>
+<strong>When:</strong> the app has to find a start or a home that you gave as a place name, not as a UK postcode.<br>
+<a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">OpenStreetMap Foundation privacy policy</a></dd>
+
+<dt>postcodes.io and getthedata.com: UK postcodes</dt>
+<dd><strong>Receives:</strong> the UK postcode you typed.<br>
+<strong>When:</strong> the app has to find a start or a home that you gave as a UK postcode.<br>
+<a href="https://ideal-postcodes.co.uk/privacy" target="_blank" rel="noopener noreferrer">postcodes.io (Ideal Postcodes) privacy</a> ·
+<a href="https://www.getthedata.com/privacy" target="_blank" rel="noopener noreferrer">getthedata.com privacy</a></dd>
+
+<dt>OpenFreeMap (tiles.openfreemap.org): the map</dt>
+<dd><strong>Receives:</strong> the numbers of the map squares on your screen, which show roughly what area you are
+looking at.<br>
+<strong>When:</strong> a map is on screen and that area is not in an offline map you downloaded.<br>
+<a href="https://openfreemap.org/privacy" target="_blank" rel="noopener noreferrer">OpenFreeMap privacy policy</a></dd>
+
+<dt>Rain radar stores: Met Office and NOAA on Amazon S3, EUMETNET OPERA at CloudFerro and ECMWF, Iowa State University</dt>
+<dd><strong>Receives:</strong> which radar picture is wanted. A picture covers a whole country or continent, so
+no position is sent.<br>
+<strong>When:</strong> whenever the app shows or uses the rain radar.<br>
+<a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Amazon Web Services privacy</a> ·
+<a href="https://cloudferro.com/privacy-policy/" target="_blank" rel="noopener noreferrer">CloudFerro privacy</a> ·
+<a href="https://www.ecmwf.int/en/privacy" target="_blank" rel="noopener noreferrer">ECMWF privacy</a> ·
+<a href="https://www.iastate.edu/disclaimers-and-terms" target="_blank" rel="noopener noreferrer">Iowa State University terms</a></dd>
+
+<dt>GitHub (github.com): offline maps and routing roads</dt>
+<dd><strong>Receives:</strong> which map or road file is downloaded (a country or a region).<br>
+<strong>When:</strong> you download or update offline maps or routing roads. GitHub shows the developer only how many
+times each file was downloaded.<br>
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub privacy statement</a></dd>
+</dl>
+<p>Routes are worked out on the phone, with the routing roads you downloaded. No route and no position is sent to a
+routing service.</p>
+<p>The developer-mode weather test (Settings, Developer; off unless you turn it on) sends your start position to
+the weather service without rounding.</p>
+<p>The app also contains a speed-limit and places-of-interest lookup that would ask OpenStreetMap's Overpass servers
+(overpass-api.de, overpass.private.coffee) and Nominatim about a position. No screen of this version uses it. If a
+later version does, this policy will say so first.</p>
+
+<h2 id="other">Other apps and Android features you may choose to use</h2>
+<ul>
+<li><strong>Google Maps.</strong> When you tap a Google Maps button on a route, the points of that route are handed
+to Google Maps, which works under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>.</li>
+<li><strong>Export and import.</strong> When you export rides or a GPX file, the app writes a file where you choose.
+What happens to that file afterwards is up to you.</li>
+<li><strong>Voice.</strong> Spoken warnings are made by the text-to-speech engine installed on your phone. The app
+hands it the words to speak.</li>
+<li><strong>Position on the ride screen.</strong> It comes from Google Play services on your phone, under Google's
+privacy policy.</li>
+<li><strong>Android backup.</strong> If backup is on in Android's settings, Android stores the app's settings
+(including your Nanny home), your saved rides and the planner's stored rides and settings in your own Google
+account, and can copy them to a new phone. The ride history, the log, offline maps and routing roads are not backed
+up. You manage this backup in Android's and Google's settings.</li>
+</ul>
+
+<h2 id="permissions">The permissions the app asks for</h2>
+<ul>
+<li><strong>Location (precise or approximate):</strong> the radar around you, a start where you are, Ride with radar.</li>
+<li><strong>Location all the time (background):</strong> the Nanny only. See above.</li>
+<li><strong>Notifications:</strong> the running ride, the running Nanny and its go-home alerts, Route watch.</li>
+<li><strong>Foreground service (location):</strong> keeps a ride or a Nanny running with the screen off, always with
+a notification.</li>
+<li><strong>Alarms and reminders:</strong> wakes the phone for each Nanny check on time.</li>
+<li><strong>Keep awake, vibrate:</strong> finishing a check while the phone sleeps, and the alert.</li>
+<li><strong>Internet, network and Wi-Fi state:</strong> the downloads listed above, and telling Wi-Fi from mobile data
+before a large download.</li>
+</ul>
+<p>The app may also offer to open Android's battery settings, so that you can stop Android putting the app to sleep
+during a ride. That choice is yours and is made in Android's own screen.</p>
+
+<h2 id="keep">How long things are kept, and how to delete them</h2>
+<ul>
+<li>Saved rides, your home and your settings stay on the phone until you delete them: delete a ride in the app, or
+turn a Nanny off.</li>
+<li>The ride history is kept for 14 days. Settings, Rain dodge has "Clear the ride history" and the switch to stop
+keeping one.</li>
+<li>Downloaded forecasts, radar pictures and map squares are kept for a short time and replaced automatically.
+Offline maps and routing roads stay until you delete them in Settings.</li>
+<li>To delete everything at once: Android Settings, Apps, Rain Ninja, Storage, Clear storage; or uninstall the app.</li>
+<li>A backup in your Google account, and files you exported, are yours to delete where they are.</li>
+</ul>
+<p>The developer holds no information about you, so there is nothing for the developer to send you, correct or delete.</p>
+
+<h2 id="security">Security</h2>
+<p>Every connection to an outside service is encrypted (HTTPS). The app shows its planner through a small web server
+inside the app; it listens on the phone itself only, and answers only this app, with a secret key that is new at every
+start. The app's files are in Android's private storage for the app.</p>
+
+<h2 id="children">Children</h2>
+<p>Rain Ninja is made for motorcycle riders. It is not aimed at children, and the developer does not knowingly
+collect information from anyone.</p>
+
+<h2 id="rights">Your rights</h2>
+<p>Depending on where you live (for example under the UK or EU General Data Protection Regulation), you may have the
+right to see, correct, move or delete information about you, and to object to its use. Because your information stays
+on your phone, you can do all of that yourself, in the app and in Android's settings. For what a service listed above
+holds (for example its record of a request from your IP address), please ask that service; its privacy policy is
+linked above. You can also complain to your data-protection authority; in the United Kingdom that is the Information
+Commissioner's Office.</p>
+
+<h2 id="countries">Other countries</h2>
+<p>The services listed above run in several countries, among them the United Kingdom, the European Union, Norway and
+the United States. A request from your phone may therefore be handled outside your own country.</p>
+
+<h2 id="changes">Changes to this policy</h2>
+<p>When the app changes what it uses or where it sends it, this page and the copy in the app change with it, and the
+date at the top changes. The release notes of the app name every such change.</p>
+
+<h2 id="contact">Contact</h2>
+<p><a href="https://github.com/anothertest800/rain-ninja-privacy/issues" target="_blank" rel="noopener noreferrer">github.com/anothertest800/rain-ninja-privacy/issues</a></p>
+</body>
+</html>
