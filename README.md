@@ -16,4 +16,5 @@ This page is public. Please do not write personal details in an issue.
 
 | In force from | App version | What changed |
 |---|---|---|
+| 26 November 2026 | 4.21.0 | The paragraph about a speed-limit and places lookup (Overpass, Nominatim reverse) is gone: that lookup is no longer in the app. |
 | 24 November 2026 | 4.20.0 | First policy. |
